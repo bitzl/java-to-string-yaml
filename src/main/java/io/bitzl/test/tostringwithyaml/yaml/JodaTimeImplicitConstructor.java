@@ -26,8 +26,8 @@ import java.util.Date;
 /**
  * It works only when JodaTime is not a JavaBean property
  */
-public class JodaTimeImplicitContructor extends Constructor {
-    public JodaTimeImplicitContructor() {
+public class JodaTimeImplicitConstructor extends Constructor {
+    public JodaTimeImplicitConstructor() {
         this.yamlConstructors.put(Tag.TIMESTAMP, new ConstructJodaTimestamp());
     }
 

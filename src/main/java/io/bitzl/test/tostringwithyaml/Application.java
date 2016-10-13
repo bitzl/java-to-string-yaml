@@ -31,7 +31,7 @@ public class Application {
 
         System.out.println();
 
-        System.out.println("Calling toString() and load again:");
+        System.out.println("Recreating object from toString() output:");
         System.out.println(fromStringRepresetation("!!io.bitzl.test.tostringwithyaml.Book {author: {birthday: !!timestamp '1988-01-02T00:00:00Z',\n" +
                 "    name: Max Müller}, publishedAt: !!timestamp '2015-10-09T23:00:00Z', title: About Everything}"));
     }

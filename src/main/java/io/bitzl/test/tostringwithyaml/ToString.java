@@ -1,6 +1,6 @@
 package io.bitzl.test.tostringwithyaml;
 
-import io.bitzl.test.tostringwithyaml.yaml.JodaTimeImplicitContructor;
+import io.bitzl.test.tostringwithyaml.yaml.JodaTimeImplicitConstructor;
 import io.bitzl.test.tostringwithyaml.yaml.JodaTimeRepresenter;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -23,7 +23,7 @@ public class ToString {
     static {
         DumperOptions options = new DumperOptions();
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.FLOW);
-        YAML = new Yaml(new JodaTimeImplicitContructor(), new JodaTimeRepresenter(), options);
+        YAML = new Yaml(new JodaTimeImplicitConstructor(), new JodaTimeRepresenter(), options);
     }
 
     private static Yaml YAML;
